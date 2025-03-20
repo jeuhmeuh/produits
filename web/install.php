@@ -1,7 +1,7 @@
 <?php
 // Vérification de la présence du fichier cfg.php
 if (file_exists("cfg.php")) {
-    die("Installation déjà effectuée. Le fichier cfg.php existe.");
+    die("Installation déjà effectuée. Le fichier cfg.php existe.Pour une nouvelle installation supprimez ce fichier et supprimer la base de données Produits");
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
