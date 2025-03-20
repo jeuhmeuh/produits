@@ -21,7 +21,7 @@ $images = [
 ];
 
 // Créer une connexion à la base de données
-$conn = new mysqli($host, $user, $password, $db, $port);
+$conn = new mysqli($host, $username, $password, $dbname, $port);
 
 // Vérifier la connexion
 if ($conn->connect_error) {

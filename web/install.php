@@ -61,6 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
 <H2>Installation du système d'inventaire de produits chimiques :</H2>
 <br>
+<?php if (file_exists("cfg.php")) {
+    die("Installation déjà effectuée. Le fichier cfg.php existe.Pour une nouvelle installation supprimez ce fichier et supprimer la base de données Produits");
+}?>
 <br>
     <form method="POST">
         <label>Hôte :</label>

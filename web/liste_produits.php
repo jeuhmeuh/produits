@@ -1,11 +1,6 @@
 <?php
 // Informations de connexion à la base de données
-$host = '134.157.152.123';
-$db = 'produits_chimiques';
-$user = 'testor';
-$password = 'testor2000';
-$port = '3307';
-
+include 'cfg.php';
 // Chemin du dossier contenant les images et les fichiers PDF
 $img_path = 'imgs/';
 $pdf_path = 'FDS/';
@@ -25,7 +20,7 @@ $images = [
 ];
 
 // Créer une connexion à la base de données
-$conn = new mysqli($host, $user, $password, $db, $port);
+$conn = new mysqli($host, $username, $password, $dbname, $port);
 
 // Vérifier la connexion
 if ($conn->connect_error) {

@@ -179,7 +179,7 @@
             // Connexion à la base de données
 			include 'cfg.php';
 
-            $conn = new mysqli($host, $user, $password, $db, $port);
+            $conn = new mysqli($host, $username, $password, $dbname, $port);
             $sql = "SELECT id, codeH, phrase FROM t_phrasesH ORDER BY codeH ASC ";
             $result = $conn->query($sql);
 

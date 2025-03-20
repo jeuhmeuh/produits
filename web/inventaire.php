@@ -76,7 +76,7 @@ function filterTable(event) {
             <?php
            include 'cfg.php';
 
-            $conn = new mysqli($host, $user, $password, $db, $port);
+            $conn = new mysqli($host, $username, $password, $dbname, $port);
 
             // Vérifier la connexion
             if ($conn->connect_error) {
